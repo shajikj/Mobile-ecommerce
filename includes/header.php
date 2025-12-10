@@ -22,7 +22,7 @@ if (session_status() === PHP_SESSION_NONE) {
                     <div class="top_right text-end">
                         <ul>
                             <?php if (isset($_SESSION['USER_ID'])) { ?>
-                                <li><a href="my-account.php"><?php echo $_SESSION['USER_NAME']; ?></a></li>
+                                <li><a href="my-account.php"><?php echo $_SESSION['USERNAME']; ?></a></li>
                                 <li><a href="checkout.php">Checkout</a></li>
                                 <li><a href="logout.php">Logout</a></li>
                             <?php } else { ?>
@@ -88,7 +88,7 @@ if (session_status() === PHP_SESSION_NONE) {
                                 <a href="tablet.php">Tablet</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="gadgets.php">gadgets.php</a>
+                                <a href="gadgets.php">Gadgets</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="contact.php">Contact Us</a>
